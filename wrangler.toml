@@ -1,4 +1,4 @@
 name = "bonuskaart"
 compatibility_date = "2025-05-22"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = "/"
+pages_build_output_dir = ".vercel/output/static"
