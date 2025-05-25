@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <main className={styles.cardContainer}>
       <h1 className={styles.pageTitle}>Je Digitale AH Bonuskaart</h1>
+      <hr className={styles.breakLine} />
       <article className={styles.card} aria-labelledby="card-title">
         <header className={styles.cardHeader}>
           <h2 id="card-title">AH Bonuskaart</h2>
