@@ -12,7 +12,7 @@ export default function Home() {
         <div className={styles.cardBody}>
           <div className={styles.barcodeContainer}>
             <Image
-              src="/barcode.svg"
+              src="/img/barcode.jpeg"
               alt="Barcode"
               className={styles.barcodeImage}
               width={300}
@@ -20,8 +20,7 @@ export default function Home() {
             />
           </div>
           <div className={styles.cardNumber}>
-            <p>Kaartnummer:</p>
-            <p className={styles.number}>1234 5678 9012 3456</p>
+            <p className={styles.number}>2622731939923</p>
           </div>
         </div>
         <div className={styles.cardFooter}>
