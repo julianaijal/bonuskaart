@@ -5,16 +5,16 @@ export default function Home() {
   return (
     <main className={styles.cardContainer}>
       <h1 className={styles.pageTitle}>Je Digitale AH Bonuskaart</h1>
-      <article className={styles.card}>
+      <article className={styles.card} aria-labelledby="card-title">
         <header className={styles.cardHeader}>
-          <h2>AH Bonuskaart</h2>
+          <h2 id="card-title">AH Bonuskaart</h2>
         </header>
         <div className={styles.cardBody}>
           <div className={styles.barcodeSection}>
             <div className={styles.barcodeContainer}>
               <Image
                 src="/img/barcode.jpeg"
-                alt="Barcode"
+                alt="AH Bonuskaart barcode"
                 className={styles.barcodeImage}
                 width={300}
                 height={100}
