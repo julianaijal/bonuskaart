@@ -19,6 +19,7 @@ export default function Home() {
                 className={styles.barcodeImage}
                 width={300}
                 height={100}
+                priority
               />
             </div>
             <div className={styles.cardNumber}>
