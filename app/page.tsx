@@ -1,25 +1,26 @@
 import Image from 'next/image';
+import styles from "./styles/card.module.scss";
 
 export default function Home() {
   return (
     <main>
       <h1>Welcome to Bonuskaart</h1>
-      <div className="card-container">
-        <div className="card">
-          <div className="card-header">
-            <h2>My Bonus Card</h2>
+      <div className={styles.cardContainer}>
+        <div className={styles.card}>
+          <div className={styles.cardHeader}>
+            <h2>Mijn Bonuskaart</h2>
           </div>
-          <div className="card-body">
-            <div className="barcode-container">
-              <Image src="../public/barcode.svg" alt="Barcode" className="barcode-image" width={300} height={100} />
+          <div className={styles.cardBody}>
+            <div className={styles.barcodeContainer}>
+              <Image src="/barcode.svg" alt="Barcode" className={styles.barcodeImage} width={300} height={100} />
             </div>
-            <div className="card-number">
-              <p>Card Number:</p>
-              <p className="number">1234 5678 9012 3456</p>
+            <div className={styles.cardNumber}>
+              <p>Kaartnummer:</p>
+              <p className={styles.number}>1234 5678 9012 3456</p>
             </div>
           </div>
-          <div className="card-footer">
-            <p>Show this card at checkout</p>
+          <div className={styles.cardFooter}>
+            <p>Scan deze kaart bij de checkout</p>
           </div>
         </div>
       </div>

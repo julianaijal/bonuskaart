@@ -1,0 +1,68 @@
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #f0f0f0;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+.cardHeader {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.cardHeader h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.cardBody {
+  padding: 20px;
+  text-align: center;
+}
+
+.barcodeContainer {
+  margin-bottom: 20px;
+}
+
+.barcodeImage {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.cardNumber {
+  margin-bottom: 20px;
+}
+
+.cardNumber p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.number {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 2px;
+}
+
+.cardFooter {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9em;
+}
