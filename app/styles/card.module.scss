@@ -36,17 +36,26 @@
 }
 
 .barcodeContainer {
-  margin-bottom: 20px;
+  margin-bottom: 0; // Reduced space below barcode
 }
 
 .barcodeImage {
   width: 100%;
   max-width: 300px;
   height: auto;
+  display: block; // Ensures it behaves as a block for layout
+}
+
+.barcodeSection { // New style for the wrapper
+  max-width: 300px; // Match barcode image width
+  margin: 0 auto 20px auto; // Center it and add bottom margin
 }
 
 .cardNumber {
-  margin-bottom: 20px;
+  text-align: left; // Align number to the left
+  margin-top: -8px; // Pulls number closer to barcode; adjust as needed
+  position: relative;
+  // margin-bottom has been moved to .barcodeSection
 }
 
 .cardNumber p {
@@ -55,10 +64,12 @@
 }
 
 .number {
-  font-size: 1.8em;
-  font-weight: bold;
+  font-family: 'Consolas', 'Menlo', 'Courier New', monospace;
+  font-size: 1.1em;
+  font-weight: 500;
   color: #003b73;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
+  margin: 0;
 }
 
 .cardFooter {

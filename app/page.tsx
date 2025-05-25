@@ -10,18 +10,20 @@ export default function Home() {
           <h2>AH Bonuskaart</h2>
         </div>
         <div className={styles.cardBody}>
-          <div className={styles.barcodeContainer}>
-            <Image
-              src="/img/barcode.jpeg"
-              alt="Barcode"
-              className={styles.barcodeImage}
-              width={300}
-              height={100}
-            />
-          </div>
-          <div className={styles.cardNumber}>
-            <p className={styles.number}>2622731939923</p>
-          </div>
+          <div className={styles.barcodeSection}> {/* New wrapper */}
+            <div className={styles.barcodeContainer}>
+              <Image
+                src="/img/barcode.jpeg"
+                alt="Barcode"
+                className={styles.barcodeImage}
+                width={300}
+                height={100}
+              />
+            </div>
+            <div className={styles.cardNumber}>
+              <p className={styles.number}>2622731939923</p>
+            </div>
+          </div> {/* End of new wrapper */}
         </div>
         <div className={styles.cardFooter}>
           <p>Scan deze kaart bij de checkout</p>
