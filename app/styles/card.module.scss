@@ -1,12 +1,10 @@
 .cardContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  min-height: 100vh;
+  padding-top: 5vh;
   background-color: #003b73;
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
 }
 
 .card {
@@ -69,4 +67,12 @@
   padding: 15px;
   text-align: center;
   font-size: 0.9em;
+}
+
+.pageTitle {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 8vh; 
+  font-size: 2.2em;   
+  font-weight: bold;
 }
