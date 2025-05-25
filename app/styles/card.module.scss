@@ -52,7 +52,7 @@
 }
 
 .cardNumber {
-  text-align: left;
+  text-align: center;
   margin-top: -8px;
   position: relative;
 }
@@ -69,7 +69,6 @@
   color: #003b73;
   letter-spacing: 4px;
   margin: 0;
-  padding-left: 10px;
 }
 
 .cardFooter {
@@ -95,4 +94,7 @@
   font-size: 0.9rem;
   color: #ffffff;
   line-height: 1.5;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
