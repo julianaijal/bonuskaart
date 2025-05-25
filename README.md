@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💳 Bonuskaart
 
-## Getting Started
+This is a digital representation of a bonus card, built with Next.js, TypeScript, and SCSS. It's designed to be mobile-friendly and displays a barcode for in-store use.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+*   Displays a digital bonus card.
+*   Shows a scannable barcode image (`/public/img/barcode.jpeg`).
+*   Mobile-first design.
+*   Includes bundle analysis setup with `@next/bundle-analyzer`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚙️ Technology Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*   [Next.js](https://nextjs.org/) (v14+)
+*   [React](https://reactjs.org/)
+*   [TypeScript](https://www.typescriptlang.org/)
+*   [SCSS Modules](https://sass-lang.com/)
+*   [ESLint](https://eslint.org/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+*   `app/page.tsx`: Main page component displaying the card.
+*   `app/layout.tsx`: Main layout component.
+*   `app/styles/card.module.scss`: Styles for the card component.
+*   `app/globals.scss`: Global styles.
+*   `public/img/barcode.jpeg`: The barcode image.
+*   `next.config.mjs`: Next.js configuration, including image domains and bundle analyzer setup.
+*   `package.json`: Project dependencies and scripts.
+*   `wrangler.jsonc`: Configuration for Cloudflare Worker (serves static assets from `./public`).
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Prerequisites
+*   npm or yarn.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1.  **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    cd bonuskaart
+    ```
 
-## Deploy on Vercel
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📜 Available Scripts
+
+*   `npm run dev`: Starts the development server.
+*   `npm run build`: Builds the application for production.
+*   `npm run start`: Starts a Next.js production server.
+*   `npm run lint`: Lints the codebase using ESLint.
+*   `npm run analyze`: Builds the application and opens the bundle analyzer report (`.next/analyze/client.html`).
+
+## 🖼️ Barcode
+
+The barcode image is `barcode.jpeg` and is located in the `/public/img/` directory. It is displayed using the `next/image` component.
+
+
+## ☁️ Deployment
+
+### Cloudflare Pages
+
+*   The project is configured for deployment on Cloudflare Pages.
+*   Ensure the `NODE_VERSION` environment variable in the Cloudflare Pages build settings is set to `20.9.0` or a compatible newer version (e.g., `20.11.0`) to match the `engines` field in `package.json`.
+
+### Cloudflare Worker (Static Assets)
+
+*   A Cloudflare Worker named `bonuskaart` is configured via `wrangler.jsonc` to serve static assets from the `./public` directory.
+*   Deployed URL for static assets (if configured separately): `https://bonuskaart.julian-aijal.workers.dev`
