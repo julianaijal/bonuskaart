@@ -5,12 +5,12 @@ export default function Home() {
   return (
     <main className={styles.cardContainer}>
       <h1 className={styles.pageTitle}>Je Digitale AH Bonuskaart</h1>
-      <div className={styles.card}>
-        <div className={styles.cardHeader}>
+      <article className={styles.card}>
+        <header className={styles.cardHeader}>
           <h2>AH Bonuskaart</h2>
-        </div>
+        </header>
         <div className={styles.cardBody}>
-          <div className={styles.barcodeSection}> {/* New wrapper */}
+          <div className={styles.barcodeSection}>
             <div className={styles.barcodeContainer}>
               <Image
                 src="/img/barcode.jpeg"
@@ -23,12 +23,17 @@ export default function Home() {
             <div className={styles.cardNumber}>
               <p className={styles.number}>2622731939923</p>
             </div>
-          </div> {/* End of new wrapper */}
+          </div>
         </div>
-        <div className={styles.cardFooter}>
+        <footer className={styles.cardFooter}>
           <p>Scan deze kaart bij de checkout</p>
-        </div>
-      </div>
+        </footer>
+      </article>
+      <p className={styles.cardText}>
+        Met deze digitale AH Bonuskaart heb je jouw Albert Heijn voordeel altijd bij de hand. 
+        Scan de barcode eenvoudig bij de kassa. Een handig alternatief voor de fysieke kaart 
+        of de AH app, perfect voor snelle toegang tot je korting.
+      </p>
     </main>
   );
 }
