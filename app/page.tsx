@@ -4,7 +4,7 @@ import styles from "./styles/card.module.scss";
 export default function Home() {
   return (
     <main>
-      <h1>Welcome to Bonuskaart</h1>
+      <h1 className={styles.pageTitle}>Welcome to Bonuskaart</h1>
       <div className={styles.cardContainer}>
         <div className={styles.card}>
           <div className={styles.cardHeader}>

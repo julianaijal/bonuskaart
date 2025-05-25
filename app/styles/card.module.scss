@@ -3,13 +3,13 @@
   justify-content: center;
   align-items: center;
   min-height: 80vh;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
 .card {
   background-color: #ffffff;
   border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   width: 100%;
   max-width: 350px;
   overflow: hidden;
@@ -17,7 +17,7 @@
 }
 
 .cardHeader {
-  background-color: #007bff;
+  background-color: #179eda;
   color: white;
   padding: 20px;
   text-align: center;
@@ -26,6 +26,7 @@
 .cardHeader h2 {
   margin: 0;
   font-size: 1.5em;
+  color: #ffffff;
 }
 
 .cardBody {
@@ -49,19 +50,19 @@
 
 .cardNumber p {
   margin: 5px 0;
-  color: #555;
+  color: #003b73;
 }
 
 .number {
   font-size: 1.8em;
   font-weight: bold;
-  color: #333;
+  color: #003b73;
   letter-spacing: 2px;
 }
 
 .cardFooter {
-  background-color: #f8f9fa;
-  color: #6c757d;
+  background-color: #179eda;
+  color: #ffffff;
   padding: 15px;
   text-align: center;
   font-size: 0.9em;
