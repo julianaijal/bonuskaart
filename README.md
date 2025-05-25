@@ -5,7 +5,7 @@ This is a digital representation of a bonus card, built with Next.js, TypeScript
 ## ✨ Features
 
 *   Displays a digital bonus card.
-*   Shows a scannable barcode image (`/public/img/barcode.jpeg`).
+*   Shows a scannable barcode image (`/public/img/barcode.svg`).
 *   Mobile-first design.
 *   Includes bundle analysis setup with `@next/bundle-analyzer`.
 
@@ -23,7 +23,7 @@ This is a digital representation of a bonus card, built with Next.js, TypeScript
 *   `app/layout.tsx`: Main layout component.
 *   `app/styles/card.module.scss`: Styles for the card component.
 *   `app/globals.scss`: Global styles.
-*   `public/img/barcode.jpeg`: The barcode image.
+*   `public/img/barcode.svg`: The barcode image.
 *   `next.config.mjs`: Next.js configuration, including image domains and bundle analyzer setup.
 *   `package.json`: Project dependencies and scripts.
 *   `wrangler.jsonc`: Configuration for Cloudflare Worker (serves static assets from `./public`).
@@ -64,7 +64,7 @@ This is a digital representation of a bonus card, built with Next.js, TypeScript
 
 ## 🖼️ Barcode
 
-The barcode image is `barcode.jpeg` and is located in the `/public/img/` directory. It is displayed using the `next/image` component.
+The barcode image is `barcode.svg` and is located in the `/public/img/` directory. It is displayed using the `next/image` component.
 
 
 ## ☁️ Deployment

@@ -14,7 +14,7 @@ export default function Home() {
           <div className={styles.barcodeSection}>
             <div className={styles.barcodeContainer}>
               <Image
-                src="/img/barcode.jpeg"
+                src="/img/barcode.svg"
                 alt="AH Bonuskaart barcode"
                 className={styles.barcodeImage}
                 width={300}
