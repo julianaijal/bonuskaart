@@ -3,10 +3,9 @@ import styles from "./styles/card.module.scss";
 
 export default function Home() {
   return (
-    <main>
+    <main className={styles.cardContainer}>
       <h1 className={styles.pageTitle}>Welcome to Bonuskaart</h1>
-      <div className={styles.cardContainer}>
-        <div className={styles.card}>
+      <div className={styles.card}>
           <div className={styles.cardHeader}>
             <h2>Mijn Bonuskaart</h2>
           </div>
@@ -23,7 +22,6 @@ export default function Home() {
             <p>Scan deze kaart bij de checkout</p>
           </div>
         </div>
-      </div>
     </main>
   );
 }
