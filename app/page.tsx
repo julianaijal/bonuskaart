@@ -31,9 +31,16 @@ export default function Home() {
         </footer>
       </article>
       <p className={styles.cardText}>
-        Met deze digitale AH Bonuskaart heb je jouw Albert Heijn voordeel altijd bij de hand. 
-        Scan de barcode eenvoudig bij de kassa. Een handig alternatief voor de fysieke kaart 
-        of de AH app, perfect voor snelle toegang tot je korting.
+        Met deze digitale AH Bonuskaart heb je jouw Albert Heijn voordeel altijd
+        bij de hand. Scan de barcode eenvoudig bij de kassa. Een handig
+        alternatief voor de fysieke kaart of de AH app, perfect voor snelle
+        toegang tot je korting.
+      </p>
+      <p className={styles.pageDisclaimer}>
+        Disclaimer: Deze website is een onafhankelijk project en is op geen
+        enkele wijze gelieerd aan, goedgekeurd door of verbonden met Albert
+        Heijn of Ahold Delhaize N.V. Alle handelsmerken, logo’s, mediabestanden
+        en ander materiaal zijn eigendom van hun respectieve eigenaren.
       </p>
     </main>
   );
