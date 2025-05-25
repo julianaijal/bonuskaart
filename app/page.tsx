@@ -28,6 +28,7 @@ export default function Home() {
         </div>
         <footer className={styles.cardFooter}>
           <p>Scan deze kaart bij de checkout</p>
+          <p className={styles.footerDisclaimer}>Let op: dit is een persoonlijke bonuskaart, niet verbonden aan Albert Heijn.</p>
         </footer>
       </article>
       <p className={styles.cardText}>
