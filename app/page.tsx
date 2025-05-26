@@ -2,7 +2,30 @@ import Image from "next/image";
 import styles from "./styles/card.module.scss";
 
 export default function Home() {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ahbonuskaart.online";
+  const pageTitle = "Mijn AH Bonuskaart - Nooit meer je kaart vergeten!";
+  const pageDescription = "Altijd je Albert Heijn Bonuskaart bij de hand. Handig als je je fysieke kaart bent vergeten. Scan de barcode direct vanaf je telefoon.";
+  const imageUrl = `${siteUrl}/img/barcode.svg`; // Ensure this path is correct and absolute
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": pageTitle,
+    "description": pageDescription,
+    "url": siteUrl,
+    "image": imageUrl,
+    "mainEntity": {
+      "@type": "Article",
+      "headline": pageTitle,
+      "image": imageUrl,
+    }
+  };
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     <main className={styles.cardContainer}>
       <h1 className={styles.pageTitle}>Je Digitale AH Bonuskaart</h1>
       <hr className={styles.breakLine} />
@@ -45,5 +68,6 @@ export default function Home() {
         en ander materiaal zijn eigendom van hun respectieve eigenaren.
       </p>
     </main>
+    </>
   );
 }
