@@ -11,6 +11,7 @@ const imageUrl = `/img/barcode.jpeg`;
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: pageTitle,
+  manifest: "/manifest.json",
   description: pageDescription,
   applicationName: siteName,
   keywords: ["bonuskaart", "korting", "digitaal", "barcode", "pas", "klantenkaart"],
