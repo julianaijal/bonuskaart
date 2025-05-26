@@ -9,6 +9,12 @@ This is a digital representation of a bonus card, built with Next.js, TypeScript
 *   Mobile-first design.
 *   Includes bundle analysis setup with `@next/bundle-analyzer`.
 
+## 📱 PWA (Progressive Web App)
+
+*   **Installable:** This application is a Progressive Web App and can be installed on your device (e.g., "Add to Home Screen" on mobile) for an app-like experience and quick access.
+
+
+
 ## ⚙️ Technology Stack
 
 *   [Next.js](https://nextjs.org/) (v14+)
