@@ -11,6 +11,7 @@ const imageUrl = `/img/barcode.jpeg`;
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: pageTitle,
+  manifest: "/manifest.json",
   description: pageDescription,
   applicationName: siteName,
   keywords: ["bonuskaart", "korting", "digitaal", "barcode", "pas", "klantenkaart"],
@@ -54,7 +55,6 @@ export const metadata: Metadata = {
     },
   },
 
-  manifest: "/manifest.json", 
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#179eda" },
     { media: "(prefers-color-scheme: dark)", color: "#003b73" }, 
