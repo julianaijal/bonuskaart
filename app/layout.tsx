@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.scss";
 import "./styles/main.scss";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://bonuskaart.julian-aijal.pages.dev";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ahbonuskaart.online";
 const siteName = "Mijn AH Bonuskaart";
 const pageTitle = "Mijn AH Bonuskaart - Nooit meer je kaart vergeten!";
 const pageDescription = "Altijd je Albert Heijn Bonuskaart bij de hand. Handig als je je fysieke kaart bent vergeten. Scan de barcode direct vanaf je telefoon."; // Renamed
-const imageUrl = `/img/barcode.jpeg`;
+const imageUrl = `/img/barcode.svg`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         url: imageUrl,
         width: 1200, 
         height: 630,
-        alt: "AH Bonuskaart Barcode",
+        alt: "Bonuskaart Barcode",
       },
     ],
     locale: "nl_NL",
