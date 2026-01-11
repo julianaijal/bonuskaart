@@ -13,6 +13,10 @@ const withBundleAnalyzer = nextBundleAnalyzer({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Add empty turbopack config to silence the warning
+  turbopack: {},
+  // Disable webpack config for Turbopack compatibility
+  webpack: undefined,
 };
 
 export default withBundleAnalyzer(withPWA(nextConfig));
