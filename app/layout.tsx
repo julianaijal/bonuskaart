@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.scss";
 import "./styles/main.scss";
 
@@ -70,6 +70,9 @@ export const metadata: Metadata = {
     },
   },
 
+};
+
+export const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#179eda" },
     { media: "(prefers-color-scheme: dark)", color: "#003b73" }, 
